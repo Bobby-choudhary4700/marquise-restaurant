@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <p>Indulge in exquisite flavours crafted with care. </p>
+      </div>
+      <nav class="main-nav">
+        <a style="text-decoration: none" href="home.html">
+            <img class="logo" src="/images/logo.png" alt="" />
+        </a>
+        <div class="nav-links">
+          <a href="menu.html" class="link">MENUS</a>
+          <a href="bakery.html" class="link">BAKERY</a>
+          <a href="about.html" class="link">ABOUT</a>
+          <a href="contact.html" class="link">CONTACT</a>
+          <a href="#reservations" class="reservation-btn">RESERVATIONS</a>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+      </nav>
+      <div class="mobile-menu">
+        <button class="close-menu">×</button>
+        <div class="mobile-menu-content">
+          <a href="menu.html" class="link">MENUS</a>
+          <a href="bakery.html" class="link">BAKERY</a>
+          <a href="about.html" class="link">ABOUT</a>
+          <a href="contact.html" class="link">CONTACT</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide active">
+            <img
+              src="https://images.getbento.com/accounts/65e1fe01d2241d86184cbee4f6645488/media/images/20148Reign01.jpg?w=1200&fit=max&auto=compress,format&cs=origin"
+              alt="Dining Room"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.getbento.com/accounts/65e1fe01d2241d86184cbee4f6645488/media/images/63158REIGN_RESTAURANT_RICK_OBRIEN_MR22-1.jpg?w=1200&fit=max&auto=compress,format&cs=origin"
+              alt="Wine Bar"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.getbento.com/accounts/65e1fe01d2241d86184cbee4f6645488/media/images/74070REIGN_RESTAURANT_OBRIEN_JN22-45.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5"
+              alt="Bakery"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.getbento.com/accounts/65e1fe01d2241d86184cbee4f6645488/media/images/61230REIGN_BAR_RICK_OBRIEN_MR22-15.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.53&fp-y=0.51"
+              alt="Exterior"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.getbento.com/accounts/65e1fe01d2241d86184cbee4f6645488/media/images/22372FRY_REIGN_RESTO_FB23-3.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5"
+              alt="Bar"
+            />
+          </div>
+        </div>
+
+        <div class="slider-navigation">
+          <button class="play-pause-btn">
+            <img
+              src="/images/pause.png"
+              alt="Pause"
+              style="width: 19px; height: 21px"
+            />
+          </button>
+          <div class="dots"></div>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="menu-title">MENUS</h1>
+
+        <div class="menu-filters">
+          <button class="filter-btn active" data-filter="breakfast">
+            BREAKFAST
+          </button>
+          <button class="filter-btn" data-filter="lunch">LUNCH</button>
+          <button class="filter-btn" data-filter="dinner">DINNER</button>
+          <button class="filter-btn" data-filter="drinks">DRINKS</button>
+        </div>
+
+        <div class="menu-sections">
+          <!-- Breakfast Section -->
+          <div class="menu-section active" data-category="breakfast">
+            <div class="menu-column">
+              <h2 class="section-title">HEALTHY CORNER</h2>
+
+              <div class="menu-item">
+                <h3>OVERNIGHT OATS</h3>
+                <p class="item-description">
+                  blueberries, rolled oats, hemp seeds, chia seeds, goji
+                  berries, oat milk, coconut yogurt, agave syrup
+                </p>
+                <p class="item-price">17</p>
+              </div>
+
+              <div class="menu-item">
+                <h3>AVOCADO ON TOAST</h3>
+                <p class="item-description">
+                  heirloom tomato, poached egg, sourdough, tomato jam, greens,
+                  togarashi, chive oil
+                </p>
+                <p class="item-price">28</p>
+              </div>
+            </div>
+
+            <div class="menu-column">
+              <h2 class="section-title">SIGNATURE BREAKFAST</h2>
+
+              <div class="menu-item">
+                <h3>FARMHOUSE BREAKFAST</h3>
+                <p class="item-description">
+                  two heritage eggs, toast, choice of bacon, peameal bacon, or
+                  farmer's sausage
+                </p>
+                <p class="item-price">34</p>
+              </div>
+
+              <div class="menu-item">
+                <h3>HOGTOWN BREAKFAST SANDWICH</h3>
+                <p class="item-description">
+                  heritage egg scramble, peameal bacon, cheddar cheese, arugula,
+                  mustard aioli, brioche bun
+                </p>
+                <p class="item-price">27</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lunch Section -->
+          <div class="menu-section" data-category="lunch">
+            <div class="menu-column">
+              <h2 class="section-title">STARTERS</h2>
+
+              <div class="menu-item">
+                <h3>CAESAR SALAD</h3>
+                <p class="item-description">
+                  romaine hearts, parmesan, herb croutons, house caesar dressing
+                </p>
+                <p class="item-price">16</p>
+              </div>
+
+              <div class="menu-item">
+                <h3>FRENCH ONION SOUP</h3>
+                <p class="item-description">
+                  caramelized onions, beef broth, gruyere, crusty bread
+                </p>
+                <p class="item-price">14</p>
+              </div>
+            </div>
+
+            <div class="menu-column">
+              <h2 class="section-title">MAIN COURSES</h2>
+
+              <div class="menu-item">
+                <h3>STEAK FRITES</h3>
+                <p class="item-description">
+                  8oz striploin, hand-cut fries, café de paris butter
+                </p>
+                <p class="item-price">38</p>
+              </div>
+
+              <div class="menu-item">
+                <h3>FISH & CHIPS</h3>
+                <p class="item-description">
+                  beer-battered haddock, tartar sauce, coleslaw
+                </p>
+                <p class="item-price">26</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dinner Section -->
+          <div class="menu-section" data-category="dinner">
+            <div class="menu-column">
+              <h2 class="section-title">APPETIZERS</h2>
+
+              <div class="menu-item">
+                <h3>OYSTERS</h3>
+                <p class="item-description">
+                  daily selection, mignonette, horseradish, lemon
+                </p>
+                <p class="item-price">MP</p>
+              </div>
+
+              <div class="menu-item">
+                <h3>BEEF TARTARE</h3>
+                <p class="item-description">
+                  hand-chopped tenderloin, dijon, capers, egg yolk, crostini
+                </p>
+                <p class="item-price">24</p>
+              </div>
+            </div>
+
+            <div class="menu-column">
+              <h2 class="section-title">ENTREES</h2>
+
+              <div class="menu-item">
+                <h3>DUCK BREAST</h3>
+                <p class="item-description">
+                  maple-glazed duck, wild mushrooms, roasted root vegetables
+                </p>
+                <p class="item-price">42</p>
+              </div>
+
+              <div class="menu-item">
+                <h3>SEAFOOD LINGUINE</h3>
+                <p class="item-description">
+                  shrimp, scallops, mussels, white wine sauce, herbs
+                </p>
+                <p class="item-price">36</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drinks Section -->
+          <div class="menu-section" data-category="drinks">
+            <div class="menu-column">
+              <h2 class="section-title">COCKTAILS</h2>
+
+              <div class="menu-item">
+                <h3>CLASSIC MARTINI</h3>
+                <p class="item-description">
+                  gin or vodka, dry vermouth, olive or twist
+                </p>
+                <p class="item-price">16</p>
+              </div>
+
+              <div class="menu-item">
+                <h3>OLD FASHIONED</h3>
+                <p class="item-description">
+                  bourbon, bitters, sugar, orange peel
+                </p>
+                <p class="item-price">18</p>
+              </div>
+            </div>
+
+            <div class="menu-column">
+              <h2 class="section-title">WINE BY THE GLASS</h2>
+
+              <div class="menu-item">
+                <h3>HOUSE RED</h3>
+                <p class="item-description">cabernet sauvignon, merlot blend</p>
+                <p class="item-price">12</p>
+              </div>
+
+              <div class="menu-item">
+                <h3>HOUSE WHITE</h3>
+                <p class="item-description">
+                  chardonnay, sauvignon blanc blend
+                </p>
+                <p class="item-price">12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-links">
+        <a href="#privacy">PRIVACY POLICY</a>
+        <a href="#cookies">COOKIE POLICY</a>
+        <a href="#consumer">CONSUMER REQUEST FORM</a>
+        <a href="#press">PRESS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <div class="powered-by">
+        <p>powered by BentoBox</p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <script>
+      document.querySelectorAll(".filter-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          // Remove active class from all buttons
+          document.querySelectorAll(".filter-btn").forEach((btn) => {
+            btn.classList.remove("active");
+          });
+
+          // Add active class to clicked button
+          button.classList.add("active");
+
+          // Get the filter value
+          const filterValue = button.getAttribute("data-filter");
+
+          // Hide all sections first
+          document.querySelectorAll(".menu-section").forEach((section) => {
+            section.classList.remove("active");
+          });
+
+          // Show the selected section
+          const targetSection = document.querySelector(
+            `.menu-section[data-category="${filterValue}"]`
+          );
+          if (targetSection) {
+            setTimeout(() => {
+              targetSection.classList.add("active");
+            }, 50); // Small delay for smoother transition
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

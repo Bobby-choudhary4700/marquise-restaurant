@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <p>Indulge in exquisite flavours crafted with care. </p>
+      </div>
+      <nav class="main-nav">
+        <a style="text-decoration: none" href="home.html">
+            <img class="logo" src="/images/logo.png" alt="" />
+        </a>
+        <div class="nav-links">
+          <a href="menu.html" class="link">MENUS</a>
+          <a href="bakery.html" class="link">BAKERY</a>
+          <a href="about.html" class="link">ABOUT</a>
+          <a href="contact.html" class="link">CONTACT</a>
+          <a href="#reservations" class="reservation-btn">RESERVATIONS</a>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+      </nav>
+      <div class="mobile-menu">
+        <button class="close-menu">×</button>
+        <div class="mobile-menu-content">
+          <a href="menu.html" class="link">MENUS</a>
+          <a href="bakery.html" class="link">BAKERY</a>
+          <a href="about.html" class="link">ABOUT</a>
+          <a href="contact.html" class="link">CONTACT</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="contact-container">
+        <div style="width: fit-content; text-align: center">
+          <h1>Contact Us</h1>
+          <p>Send us a message and we’ll get back to you within 24 hours.</p>
+        </div>
+        <form class="contactForm">
+          <div class="input-group">
+            <label for="name">Name - <span>Required</span></label>
+            <input type="text" id="name" name="name" placeholder="Your Name" />
+            <div id="nameError" class="error"></div>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email - <span>Required</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+            />
+            <div id="emailError" class="error"></div>
+          </div>
+          <div class="input-group">
+            <label for="reason"
+              >What are you getting in touch about? -
+              <span>Optional</span></label
+            >
+            <select id="reason" name="reason">
+              <option value="">--Please choose an option--</option>
+              <option value="support">Support</option>
+              <option value="feedback">Feedback</option>
+            </select>
+            <div id="reasonError" class="error"></div>
+          </div>
+          <div class="input-group">
+            <label for="message">Your Message - <span>Required</span></label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+            ></textarea>
+            <div id="messageError" class="error"></div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="sendBtn">Send</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-links">
+        <a href="#privacy">PRIVACY POLICY</a>
+        <a href="#cookies">COOKIE POLICY</a>
+        <a href="#consumer">CONSUMER REQUEST FORM</a>
+        <a href="#press">PRESS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <div class="powered-by">
+        <p>powered by BentoBox</p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
